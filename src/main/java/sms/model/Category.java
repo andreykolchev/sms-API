@@ -29,7 +29,7 @@ public class Category {
 
     @ManyToOne
     @JoinColumn(name = "parent_id", foreignKey = @ForeignKey(name = "fk_parent_id"))
-      private Category parent;
+    private Category parent;
 
     @Override
     public boolean equals(Object o) {

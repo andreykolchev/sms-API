@@ -23,11 +23,11 @@ public class Route {
 
     @ManyToOne
     @JoinColumn(name = "user_id", foreignKey = @ForeignKey(name = "fk_user_id"))
-    User user;
+    private User user;
 
     @ManyToOne
     @JoinColumn(name = "trade_point_id", foreignKey = @ForeignKey(name = "fk_trade_point_id"))
-    TradePoint tradePoint;
+    private TradePoint tradePoint;
 
     @Column(name = "date_time")
     private java.util.Date dateTime;
